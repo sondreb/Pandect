@@ -1,0 +1,49 @@
+<template>
+	
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  
+	  <div class="container-fluid">
+	  
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle Navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			 <!--<i class="fa fa-bars"></i>-->
+		  </button>
+		  <!--
+			<a class="navbar-brand" href="#">
+			<i class="fa fa-home"></i>
+			<span>${router.title}</span>
+		  </a>-->
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+
+			  <li><a href="#"><i class="fa fa-plus fa-2x"></a></i></li>
+			  <li><a href="#"><i class="fa fa-heartbeat fa-2x"></i></a></li>
+			  <!--<li><a href="#"><i class="fa fa-legal fa-2x"></i></a></li>-->
+
+			<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+				<a href.bind="row.href">${row.title}</a>
+			</li>
+		  </ul>
+			
+		<ul class="nav navbar-nav navbar-right">
+      
+			<li style="float: right; background-color: #E8685A; color: white;"><a href="#">3</a></li>
+			<li style="float: right;"><a href="#" style="padding: 0px !important;"><img src="http://sondreb.com/img/Sondre_Bjellas.jpg" width="50" height="50"></a></li>
+			<li style="float: right;"><a href="#"><i class="fa fa-gear fa-2x"></i></a></li>
+
+			<li class="loader" if.bind="router.isNavigating">
+			  <i class="fa fa-spinner fa-spin fa-2x"></i>
+			</li>
+			
+          </ul>
+
+		</div>
+	  </div>
+  </nav>
+</template>

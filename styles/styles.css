@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+    box-sizing: border-box;
+}
+
+.splash .message {
+    font-size: 72px;
+    line-height: 72px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    /*text-transform: uppercase;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.splash .fa-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 72px;
+    margin-top: 50px;
+}
+
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 54px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+.container-fluid
+{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+section {
+    margin: 0 20px;
+}
+
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
+.navbar {min-height:50px !important}
+
+.navbar-nav li.loader {
+    margin: 12px 24px 0 6px;
+}
+
+.navbar-fixed-top {
+    min-height: 50px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 64px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+.pictureDetail {
+    max-width: 425px;
+}
+
+.widgets
+{
+	border-top: 1px solid #7C735E;
+	border-left: 1px solid #7C735E;
+}
+
+.widget
+{
+	float: left;
+	border-right: 1px solid #7C735E; 
+	border-bottom: 1px solid #7C735E; 
+	width: 320px; 
+	height: 380px; 
+	background-image: url('http://p1.pichost.me/160x160/56/1802017.jpg');
+	background-size: cover;
+		
+}
