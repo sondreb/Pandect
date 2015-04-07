@@ -18,6 +18,12 @@ and functional dashboards.
 - Use the framework to build custom solutions, such as Home Automation Dashboards.
 - Simple search to filter what you need to find.
 
+## Screenshots:
+
+Early prototypes:
+
+![Home Screen](/img/pandect-prototype-1.png?raw=true "Prototype 1")
+
 ## Run Pandect:
 
 Navigate to the source code, then run the following commands:
