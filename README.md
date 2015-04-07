@@ -30,21 +30,9 @@ Navigate to the source code, then run the following commands:
 
 ```shell
 npm install
-```
-  
-```shell
 npm install -g gulp
-```
-
-```shell
 npm install -g jspm
-```
-
-```shell
-  jspm install -y
-```
-
-```shell
+jspm install -y
 gulp watch
 ```
   
@@ -54,6 +42,7 @@ Note: Due to limits on GitHub, you might have to register your GitHub account in
 
 ```shell
 jspm registry config github
+```
 
 Then generate a personal access token on this URL:
 [https://github.com/settings/applications](https://github.com/settings/applications)
