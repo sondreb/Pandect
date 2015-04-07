@@ -30,18 +30,23 @@ Navigate to the source code, then run the following commands:
 
 ```shell
 npm install
+```
   
 ```shell
 npm install -g gulp
-  
+```
+
 ```shell
 npm install -g jspm
-  
+```
+
 ```shell
   jspm install -y
-  
+```
+
 ```shell
 gulp watch
+```
   
 Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can make changes in the code found under `src` and the browser should auto-refresh itself as you save files.
 
@@ -60,9 +65,10 @@ To run the unit tests, first ensure that you have followed the steps above in or
 
 1. Ensure that the [Karma](http://karma-runner.github.io/) CLI is installed. If you need to install it, use the following command:
 
-  ```shell
-  npm install -g karma-cli
-  ```
+```shell
+npm install -g karma-cli
+```
+
 2. Install Aurelia libs for test visibility:
 
 ```shell
@@ -70,11 +76,12 @@ jspm install aurelia-framework
 jspm install aurelia-http-client
 jspm install aurelia-router
 ```
+
 3. You can now run the tests with this command:
 
-  ```shell
-  karma start
-  ```
+```shell
+karma start
+```
 
 ## Running The E2E Tests
 Integration tests are performed with [Protractor](http://angular.github.io/protractor/#/).
